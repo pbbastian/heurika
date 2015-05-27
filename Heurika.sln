@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouteFinding", "RouteFinding\RouteFinding.csproj", "{BCFC82B1-6555-4CDD-9926-63E86F8DD389}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search", "Search\Search.csproj", "{7C889F4C-BC5C-47C5-B9D1-ED59D52B368A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InferenceEngine", "InferenceEngine\InferenceEngine.csproj", "{B7CE241D-6C10-4A99-A769-D96C4B98E307}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C889F4C-BC5C-47C5-B9D1-ED59D52B368A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7C889F4C-BC5C-47C5-B9D1-ED59D52B368A}.Debug|x86.Build.0 = Debug|Any CPU
+		{7C889F4C-BC5C-47C5-B9D1-ED59D52B368A}.Release|x86.ActiveCfg = Release|Any CPU
+		{7C889F4C-BC5C-47C5-B9D1-ED59D52B368A}.Release|x86.Build.0 = Release|Any CPU
+		{B7CE241D-6C10-4A99-A769-D96C4B98E307}.Debug|x86.ActiveCfg = Debug|x86
+		{B7CE241D-6C10-4A99-A769-D96C4B98E307}.Debug|x86.Build.0 = Debug|x86
+		{B7CE241D-6C10-4A99-A769-D96C4B98E307}.Release|x86.ActiveCfg = Release|x86
+		{B7CE241D-6C10-4A99-A769-D96C4B98E307}.Release|x86.Build.0 = Release|x86
+		{BCFC82B1-6555-4CDD-9926-63E86F8DD389}.Debug|x86.ActiveCfg = Debug|x86
+		{BCFC82B1-6555-4CDD-9926-63E86F8DD389}.Debug|x86.Build.0 = Debug|x86
+		{BCFC82B1-6555-4CDD-9926-63E86F8DD389}.Release|x86.ActiveCfg = Release|x86
+		{BCFC82B1-6555-4CDD-9926-63E86F8DD389}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
