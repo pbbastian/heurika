@@ -10,9 +10,13 @@ namespace RouteFinding
 	{
 		public static void Main (string[] args)
 		{
+			var filename = "manhatten.txt";
+			var start = new Coordinate (0, 9);
+			var goal = new Coordinate (9, 0);
+
 			var streetMap = new Dictionary<Coordinate, ICollection<Street>> ();
 
-			var file = new StreamReader ("streets.txt");
+			var file = new StreamReader (filename);
 			string line;
 			while ((line = file.ReadLine ()) != null) {
 				var parts = line.Split (' ');
@@ -30,12 +34,13 @@ namespace RouteFinding
 				}
 			}
 
-			var problem = new RouteFindingProblem (streetMap, new Coordinate (35, 80), new Coordinate (45, 70));
+			var problem = new RouteFindingProblem (streetMap, start, goal);
 			var algorithm = new AStarAlgorithm<Coordinate, Street> ();
 
 			// Measure time before warm-up.
 			var sw = new Stopwatch ();
 			sw.Start ();
+
 			algorithm.Search (problem);
 			sw.Stop ();
 			var beforeJit = sw.Elapsed;

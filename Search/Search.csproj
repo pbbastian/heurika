@@ -29,14 +29,17 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="DIBRIS.Hippie">
-      <HintPath>..\packages\Hippie.2.9.1\lib\net40-client\DIBRIS.Hippie.dll</HintPath>
-    </Reference>
     <Reference Include="SD.Tools.BCLExtensions">
       <HintPath>..\packages\SD.Tools.BCLExtensions.1.0.0\lib\SD.Tools.BCLExtensions.dll</HintPath>
     </Reference>
     <Reference Include="SD.Tools.Algorithmia">
       <HintPath>..\packages\SD.Tools.Algorithmia.1.1.0\lib\SD.Tools.Algorithmia.dll</HintPath>
+    </Reference>
+    <Reference Include="Finsa.CodeServices.Common">
+      <HintPath>..\packages\Finsa.CodeServices.Common.1.14\lib\net40-client\Finsa.CodeServices.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DIBRIS.Hippie">
+      <HintPath>..\packages\Hippie.2.9.2\lib\net40-client\DIBRIS.Hippie.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -10,8 +10,11 @@ namespace InferenceEngine
 	{
 		public static void Main (string[] args)
 		{
+			var filename = "test.txt";
+			var symbol = "a";
+
 			var kb = new List<CNFClause> ();
-			var file = new StreamReader ("breakfast.txt");
+			var file = new StreamReader (filename);
 			string line;
 			while ((line = file.ReadLine ()) != null) {
 				var parts = line.Split (' ');
@@ -37,7 +40,7 @@ namespace InferenceEngine
 				kb.Add (clause);
 			}
 
-			var hypothesis = new CNFClause ().Add ("breakfast", false);
+			var hypothesis = new CNFClause ().Add (symbol, false);
 			var problem = new InferenceProblem (kb, hypothesis);
 			var algorithm = new AStarAlgorithm<CNFClause, CNFClause> ();
 
